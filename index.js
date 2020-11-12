@@ -21,6 +21,14 @@ let allWagesFor = function () {
     return payable
 }
 
-function createEmployeeRecord() {
-
+function createEmployeeRecord(employee) {
+  const record = {
+    "firstName": employee[0],
+    "familyName": employee[1],
+    "title": employee[2],
+    "payPerHour": employee[3],
+    "timeInEvents": [],
+    "timeOutEvents": []
+  };
+  return record
 };
