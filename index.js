@@ -74,4 +74,3 @@ function allWagesFor() {
 function payrollExpense() {
   this.map(x => allWagesFor.call(x));
 }
-
