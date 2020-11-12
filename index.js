@@ -60,3 +60,7 @@ function hoursWorkedOnDate(day) {
   let timeOut = this.timeOutEvents.find(x => x.date === day);
   return (timeOut.hour - timeIn.hour)/100
 }
+
+function wagesEarnedOnDate(employee, day) {
+  return hoursWorkedOnDate(employee, day) * employee.payPerHour;
+};
