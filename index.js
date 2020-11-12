@@ -46,11 +46,11 @@ function createTimeInEvent(time){
   return this
 };
 
-function createTimeOutEvent(employee, time){
-  let timeOut = employee.timeOutEvents.push({
+function createTimeOutEvent(time){
+  this.timeOutEvents.push({
     "type": "TimeOut",
     "date": time.split(' ')[0],
     "hour": parseInt(time.split(' ')[1])
   });
-  return employee
+  return this
 };
