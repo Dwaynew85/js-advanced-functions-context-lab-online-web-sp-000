@@ -71,8 +71,8 @@ function allWagesFor() {
   return wages.reduce((total, value) => total + value);
 };
 
-function calculatePayroll() {
-  return this.map(x => allWagesFor.call(x)).reduce((total, value) => total + value, 0);
+function calculatePayroll(employee) {
+  return employee.map(x => allWagesFor.call(x)).reduce((total, value) => total + value, 0);
 }
 
 function findEmployeeByFirstName(employees, name) {
