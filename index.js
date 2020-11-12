@@ -71,6 +71,6 @@ function allWagesFor() {
   return wages.reduce((total, value) => total + value);
 };
 
-function payrollExpense() {
+function calculatePayroll() {
   return this.map(x => allWagesFor.call(x)).reduce((total, value) => total + value, 0);
 }
