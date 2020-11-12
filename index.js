@@ -36,3 +36,21 @@ function createEmployeeRecord(employee) {
 function createEmployeeRecords(employees) {
   return employees.map(x => createEmployeeRecord(x));
 };
+
+function createTimeInEvent(employee, time){
+  let timeIn = employee.timeInEvents.unshift({
+    "type": "TimeIn",
+    "date": time.split(' ')[0],
+    "hour": parseInt(time.split(' ')[1])
+  });
+  return employee
+};
+
+function createTimeOutEvent(employee, time){
+  let timeOut = employee.timeOutEvents.unshift({
+    "type": "TimeOut",
+    "date": time.split(' ')[0],
+    "hour": parseInt(time.split(' ')[1])
+  });
+  return employee
+};
