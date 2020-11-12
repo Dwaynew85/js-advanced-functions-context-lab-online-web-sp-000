@@ -61,6 +61,6 @@ function hoursWorkedOnDate(day) {
   return (timeOut.hour - timeIn.hour)/100
 }
 
-function wagesEarnedOnDate(employee, day) {
+function wagesEarnedOnDate(day) {
   return hoursWorkedOnDate.call(this, day) * this.payPerHour;
 };
