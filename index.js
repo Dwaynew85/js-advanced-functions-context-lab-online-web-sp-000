@@ -22,5 +22,5 @@ let allWagesFor = function () {
 }
 
 function createEmployeeRecord() {
-  
+
 };
