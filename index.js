@@ -37,8 +37,8 @@ function createEmployeeRecords(employees) {
   return employees.map(x => createEmployeeRecord(x));
 };
 
-function createTimeInEvent(employee, time){
-  employee.timeInEvents.push({
+function createTimeInEvent(time){
+  this.timeInEvents.push({
     "type": "TimeIn",
     "date": time.split(' ')[0],
     "hour": parseInt(time.split(' ')[1])
