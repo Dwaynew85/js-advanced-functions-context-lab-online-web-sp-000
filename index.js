@@ -32,3 +32,7 @@ function createEmployeeRecord(employee) {
   };
   return record
 };
+
+function createEmployeeRecords() {
+  
+};
