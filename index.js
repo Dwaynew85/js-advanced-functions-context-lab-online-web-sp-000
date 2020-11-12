@@ -67,6 +67,6 @@ function wagesEarnedOnDate(day) {
 
 function allWagesFor() {
   let dates = this.timeInEvents.map(x => x.date);
-  let wages = dates.map(x => wagesEarnedOnDate(this, x));
+  let wages = dates.map(x => wagesEarnedOnDate.call(this, x));
   return wages.reduce((total, value) => total + value);
 }
