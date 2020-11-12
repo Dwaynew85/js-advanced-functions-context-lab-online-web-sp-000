@@ -64,3 +64,9 @@ function hoursWorkedOnDate(day) {
 function wagesEarnedOnDate(day) {
   return hoursWorkedOnDate.call(this, day) * this.payPerHour;
 };
+
+function allWagesFor() {
+  let dates = this.timeInEvents.map(x => x.date);
+  let wages = dates.map(x => wagesEarnedOnDate(this, x));
+  return wages.reduce((total, value) => total + value);
+}
