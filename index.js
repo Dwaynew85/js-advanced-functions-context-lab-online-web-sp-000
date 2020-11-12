@@ -43,7 +43,7 @@ function createTimeInEvent(time){
     "date": time.split(' ')[0],
     "hour": parseInt(time.split(' ')[1])
   });
-  return employee
+  return this
 };
 
 function createTimeOutEvent(employee, time){
